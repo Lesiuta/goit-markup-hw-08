@@ -1,0 +1,31 @@
+.company {
+    justify-content: center;
+
+&__item {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition-property: border;
+    transition-duration: var(--time);
+    transition-timing-function: var(--timing-function);
+
+   &:hover, &:focus {
+    border: 1px solid var(--accent-color);}
+
+   &:not(:last-child) {
+    margin-right: 30px;}
+}
+
+&__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+    padding: 16px 32px;
+    transition-property: fill;
+    transition-duration: var(--time);
+    transition-timing-function: var(--timing-function);
+
+   &:hover, &:focus {
+    fill: var(--accent-color);}
+}
+}

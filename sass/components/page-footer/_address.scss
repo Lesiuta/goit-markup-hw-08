@@ -1,0 +1,33 @@
+.address {
+    width: 231px;
+    margin-top: 20px;
+    font-style: normal;
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+
+&__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+&__location {
+    color: var(--secondary-text-color);
+    text-decoration: var(--primary-text-decoration);
+    transition-property: color;
+    transition-duration: var(--time);
+    transition-timing-function: var(--timing-function);
+  
+    &:hover, &:focus {
+    color: var(--accent-color);}
+}
+&__link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: var(--primary-text-decoration);
+    transition-property: color;
+    transition-duration: var(--time);
+    transition-timing-function: var(--timing-function);
+
+  &:hover, &:focus {
+    color: var(--accent-color);}
+}
+}
