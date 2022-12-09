@@ -349,14 +349,37 @@ body {
   background-color: var(--section-background-color);
 }
 
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .workers {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .workers {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -30px;
+  }
+}
+
 .workers__item {
   background-color: #FFFFFF;
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.workers__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .workers__item {
+    width: 354px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .workers__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team-member {
@@ -726,6 +749,11 @@ body {
   margin-right: auto;
   text-align: center;
 }
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .mailing {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .mailing {
     width: 570px;
@@ -760,9 +788,15 @@ body {
   padding-bottom: 15px;
   padding-left: 16px;
 }
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .input-field {
+    margin-bottom: 20px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .input-field {
     width: 450px;
+    margin-bottom: 20px;
   }
 }
 .input-field ::-webkit-input-placeholder {
@@ -825,9 +859,14 @@ body {
 .subscription-field__icon {
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: 150px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+@media screen and (min-width: 1200px) {
+  .subscription-field__icon {
+    right: 30px;
+  }
 }
 
 .modal-backdrop {
