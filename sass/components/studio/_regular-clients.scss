@@ -1,18 +1,40 @@
 .company {
-    justify-content: center;
+justify-content: center;
+flex-wrap: wrap;
+margin: -15px;
+
+@media screen and (min-width: 1200px) {
+flex-wrap: nowrap;
+margin: 0;
+}
 
 &__item {
+    width: 170px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition-property: border;
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function);
 
+    @media screen and (min-width: 480px) {
+    flex-basis: calc((100% - 4*15px) / 2);
+    margin: 15px;
+    }
+     @media screen and (min-width: 768px) {
+     flex-basis: calc((100% - 6*15px) / 3);
+     margin: 15px;
+     }
+
+     @media screen and (min-width: 1200px) {
+     &:not(:last-child) {
+     margin-right: 30px;}
+     margin: 0;
+     }
+
    &:hover, &:focus {
     border: 1px solid var(--accent-color);}
 
-   &:not(:last-child) {
-    margin-right: 30px;}
+
 }
 
 &__link {
