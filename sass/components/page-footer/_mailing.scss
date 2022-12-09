@@ -1,6 +1,14 @@
 .mailing {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
     width: 570px;
     margin-left: 23px;
+    text-align: left;
+    }
+
 
 &__title {
     font-weight: 700;
@@ -11,9 +19,10 @@
     margin-top: 12px;
 }
 &__field {
+    @media screen and (min-width: 1200px) {
     display: flex;}
 }
-
+}
 .input-field {
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -23,6 +32,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 450px;
+    }
 
  & ::placeholder {
     font-weight: 400;

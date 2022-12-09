@@ -4,7 +4,23 @@
     padding-bottom: 60px;
 }
 
-.page__footer {
+.page-footer {
+    @media screen and (min-width: 480px) and (max-width: 767.98px) {
+    display: block;
+    text-align: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+    }
+    @media screen and (min-width: 1200px) {
     display: flex;
     gap: 70px;
+    }
+}
+.page-footer__address {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    text-align: center;    
+    }
 }
