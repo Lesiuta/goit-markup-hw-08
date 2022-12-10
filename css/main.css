@@ -283,12 +283,41 @@ body {
   background-color: #188CE8;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .benefits {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .benefits {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .benefits__item {
-  width: 270px;
   border-radius: 4px;
 }
-.benefits__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .benefits__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+  }
+  .benefits__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .pluses-card {
@@ -296,7 +325,6 @@ body {
 }
 .pluses-card__icon {
   text-align: center;
-  width: 270px;
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
@@ -309,10 +337,23 @@ body {
   line-height: 1.1;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .pluses-card__title {
+    text-align: center;
+  }
+}
 .pluses-card__text {
   color: var(--primary-text-color);
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .pluses-card__text {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
 }
 
 @media screen and (max-width: 1199.98px) {
