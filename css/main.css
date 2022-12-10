@@ -61,6 +61,12 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .list {
   list-style: none;
@@ -358,7 +364,7 @@ body {
   .workers {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -30px;
+    margin: -15px;
   }
 }
 
@@ -407,6 +413,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .social {
+    padding-bottom: 30px;
+  }
 }
 
 .social__link {
@@ -678,12 +689,12 @@ body {
 
 .address {
   width: 231px;
-  margin-top: 20px;
+  margin-top: 28px;
   font-style: normal;
   list-style: none;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.1;
 }
 @media screen and (min-width: 480px) and (max-width: 1199.98px) {
   .address {
@@ -692,7 +703,7 @@ body {
   }
 }
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 .address__location {
   color: var(--secondary-text-color);
@@ -729,7 +740,16 @@ body {
   line-height: 1.1;
   color: var(--secondary-text-color);
   margin-bottom: 20px;
-  margin-top: 12px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer-title {
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    margin-top: 12px;
+  }
 }
 
 .social__link--another {
@@ -749,11 +769,6 @@ body {
   margin-right: auto;
   text-align: center;
 }
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
-  .mailing {
-    margin-top: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .mailing {
     width: 570px;
@@ -767,7 +782,11 @@ body {
   line-height: 1.1;
   color: var(--secondary-text-color);
   margin-bottom: 20px;
-  margin-top: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .mailing__title {
+    margin-top: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mailing__field {

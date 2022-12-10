@@ -3,10 +3,6 @@
     margin-right: auto;
     text-align: center;
 
-    @media screen and (min-width: 480px) and (max-width: 767.98px) {
-    margin-top: 60px;
-    }
-
     @media screen and (min-width: 1200px) {
     width: 570px;
     margin-left: 23px;
@@ -20,7 +16,10 @@
     line-height: 1.1;
     color: var(--secondary-text-color);
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
     margin-top: 12px;
+    }
+    
 }
 &__field {
     @media screen and (min-width: 1200px) {

@@ -4,7 +4,13 @@
     line-height: 1.1;
     color: var(--secondary-text-color);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-top: 5px;}
+    
+    @media screen and (min-width: 1200px) {
     margin-top: 12px;
+    }
 }
 
 .social__link--another {
