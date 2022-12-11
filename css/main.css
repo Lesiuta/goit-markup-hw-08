@@ -1160,11 +1160,6 @@ body {
   display: inline-block;
   padding: 40px;
 }
-@media screen and (max-width: 1199.98px) {
-  .feedback-form {
-    width: 450px;
-  }
-}
 .feedback-form__title {
   font-weight: 700;
   font-size: 20px;
