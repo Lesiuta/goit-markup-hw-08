@@ -1,12 +1,29 @@
 .list-buttons {
+ @media screen and (max-width: 767.98px) {
+    display: flex;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    padding-right: 130px;
+ }
+
+ @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+ }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-bottom: 34px;
-    justify-content: center;
+    justify-content: center;}
 
 &__item {
     background-color: #F5F4FA;
    &:not(:last-child) {
     margin-right: 8px;}
+
+    @media screen and (max-width: 767.98px) {
+    margin-bottom: 15px;}
 }
 }
 .button-portfolio__name {
@@ -14,7 +31,7 @@
     padding: 6px 22px;
     border: transparent;
     border-radius: 4px;
-    min-width: 73px;
+    // min-width: 73px;
     color: var(--title-text-color);
     background-color: var(--rectangle-background-color);
     font-family: inherit;
