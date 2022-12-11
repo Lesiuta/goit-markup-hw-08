@@ -3,14 +3,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
+
+    @media screen and (max-width: 1199.98px) {
+    width: 370px;
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+    width: 425px;
     font-size: 14px;
     line-height: 1.7;
-    width: 425px;
-    height: 24px;
     margin-bottom: 30px;
     margin-left: 12px;
-    margin-right: 11px;
-    cursor: pointer;
+    margin-right: 11px;}
 
 &__icon-cheked {
     opacity: 0;

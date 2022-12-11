@@ -1,7 +1,9 @@
 .feedback-form {
+    @media screen and (max-width: 1199.98px) {
+    width: 450px;}
+
     display: inline-block;
     padding: 40px;
-    height: 581px;
 
 &__title {
     font-weight: 700;
@@ -57,7 +59,7 @@
 }
 .textarea {
     margin-bottom: 20px;
-    height: px;
+   
 
 &__title {
     display: block;
