@@ -7,7 +7,9 @@
 .work {
         padding-top: 0;
     }
-
+.work-content {
+    display: flex;
+}
     .work-content__item:not(:last-child) {
         margin-right: 30px;
     }
