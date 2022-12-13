@@ -52,19 +52,11 @@
     position: absolute;
     top: 0;
     width: 100%;
+    transform: translateY(100%);
     transition-property: transform;
     transition-duration: var(--time);
     transition-timing-function: var(--timing-function);
 
-@media screen and (max-width: 767.98px) {
-transform: translateY(140%);
-}
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-transform: translateY(100%);
-}
-@media screen and (min-width: 1200px) {
-transform: translateY(110%);
-}
 
 .content-link:hover & {
     transform: translateY(0);}
